@@ -1,0 +1,111 @@
+{
+  "dataset": "global-hand-signals-reference",
+  "version": 1,
+  "records": [
+    {
+      "id": 1,
+      "handSignalName": "Thumbs Up",
+      "descriptionMeaning": "Approval, OK",
+      "category": "General / Social",
+      "notes": "Widely recognized internationally"
+    },
+    {
+      "id": 2,
+      "handSignalName": "Thumbs Down",
+      "descriptionMeaning": "Disapproval",
+      "category": "General / Social",
+      "notes": "Widely recognized internationally"
+    },
+    {
+      "id": 3,
+      "handSignalName": "Raised Fist",
+      "descriptionMeaning": "Solidarity, protest",
+      "category": "Political / Social",
+      "notes": "Common in international activism"
+    },
+    {
+      "id": 4,
+      "handSignalName": "Open Hand Wave",
+      "descriptionMeaning": "Greeting or goodbye",
+      "category": "Social / Communication",
+      "notes": "Recognized globally"
+    },
+    {
+      "id": 5,
+      "handSignalName": "Stop / Flat Palm",
+      "descriptionMeaning": "Stop, halt",
+      "category": "Traffic / Safety",
+      "notes": "Used in traffic and emergency signaling"
+    },
+    {
+      "id": 6,
+      "handSignalName": "Pointing Finger",
+      "descriptionMeaning": "Indicating direction or object",
+      "category": "Instruction / Navigation",
+      "notes": "Used universally but avoid pointing at people in some cultures"
+    },
+    {
+      "id": 7,
+      "handSignalName": "OK Sign (Circle with Thumb and Index)",
+      "descriptionMeaning": "Everything is okay",
+      "category": "General / Social",
+      "notes": "Recognized in most countries, avoid in some regions where it is offensive"
+    },
+    {
+      "id": 8,
+      "handSignalName": "Victory / Peace Sign",
+      "descriptionMeaning": "Peace, victory",
+      "category": "General / Social",
+      "notes": "Recognized globally"
+    },
+    {
+      "id": 9,
+      "handSignalName": "Salute",
+      "descriptionMeaning": "Military respect",
+      "category": "Military",
+      "notes": "Standard NATO and worldwide military gesture"
+    },
+    {
+      "id": 10,
+      "handSignalName": "Hand Signals for Traffic Control",
+      "descriptionMeaning": "Arm straight out = left turn, arm up = stop",
+      "category": "Traffic / Safety",
+      "notes": "Used internationally by traffic police and cyclists"
+    },
+    {
+      "id": 11,
+      "handSignalName": "Flag Semaphore Signals",
+      "descriptionMeaning": "Communication using two flags",
+      "category": "Maritime / Navigation",
+      "notes": "Recognized internationally in maritime signaling"
+    },
+    {
+      "id": 12,
+      "handSignalName": "Diving OK Sign",
+      "descriptionMeaning": "Circle with thumb and forefinger, other hand flat",
+      "category": "Diving / Safety",
+      "notes": "Used worldwide in scuba diving"
+    },
+    {
+      "id": 13,
+      "handSignalName": "Hand Raised, Palm Forward",
+      "descriptionMeaning": "Request attention / stop",
+      "category": "Sports / Military",
+      "notes": "Recognized in sports refereeing and military drills"
+    },
+    {
+      "id": 14,
+      "handSignalName": "Crossed Arms",
+      "descriptionMeaning": "Danger or emergency",
+      "category": "Military / Safety",
+      "notes": "Used in aviation and emergency signaling"
+    },
+    {
+      "id": 15,
+      "handSignalName": "Slow / Caution Gesture",
+      "descriptionMeaning": "Hand moving side to side, palm down",
+      "category": "Traffic / Construction",
+      "notes": "Recognized internationally in work zones"
+    }
+  ]
+}

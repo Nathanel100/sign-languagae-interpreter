@@ -1,0 +1,35 @@
+{
+  "dataset": "asl-hand-signal-database",
+  "version": 1,
+  "language": "ASL",
+  "basePath": "data/your-dataset/asl",
+  "tokens": [
+    {
+      "token": "A",
+      "type": "letter",
+      "imagePath": "letters/A.png",
+      "hands": 1,
+      "orientation": "palm-forward",
+      "source": "your-source-id",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "token": "B",
+      "type": "letter",
+      "imagePath": "letters/B.png",
+      "hands": 1,
+      "orientation": "palm-forward",
+      "source": "your-source-id",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "token": "HELLO",
+      "type": "phrase",
+      "imagePath": "phrases/HELLO.png",
+      "hands": 1,
+      "orientation": "side",
+      "source": "your-source-id",
+      "license": "CC-BY-4.0"
+    }
+  ]
+}

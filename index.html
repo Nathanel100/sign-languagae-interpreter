@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LINGUAGESTURE</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <h1>LINGUAGESTURE</h1>
+      </header>
+
+      <section class="main-layout">
+        <section class="sign-column">
+        <section class="panel controls">
+          <h2>ASL TO TEXT</h2>
+          <div class="row">
+            <label for="inputMode">Input mode</label>
+            <select id="inputMode">
+              <option value="camera">Camera</option>
+              <option value="video">Video file</option>
+            </select>
+          </div>
+
+          <div class="row" id="fileRow" hidden>
+            <label for="videoFile">Upload video</label>
+            <input id="videoFile" type="file" accept="video/*" />
+          </div>
+
+          <div class="row buttons">
+            <button id="startBtn" type="button">Start</button>
+            <button id="stopBtn" type="button" disabled>Stop</button>
+            <button id="resetBtn" type="button">Reset text</button>
+            <button id="debugBtn" type="button">Toggle debug</button>
+          </div>
+        </section>
+
+        <section class="panel preview">
+          <h2>ASL TO TEXT - LIVE PREVIEW</h2>
+          <div class="video-wrap">
+            <video id="video" autoplay playsinline muted></video>
+            <canvas id="overlay"></canvas>
+          </div>
+          <p id="status" class="status">Ready</p>
+        </section>
+
+        <section class="panel output">
+          <h2>ASL TO TEXT - OUTPUT</h2>
+          <div class="metrics">
+            <p><span>Current sign:</span> <strong id="currentSign">-</strong></p>
+            <p><span>Confidence:</span> <strong id="confidence">0.00</strong></p>
+            <p><span>FPS:</span> <strong id="fps">0</strong></p>
+          </div>
+          <div class="confidence-bar">
+            <div id="confidenceFill"></div>
+          </div>
+          <label for="signOutput">Sign output</label>
+          <div id="signOutput" class="sign-output">-</div>
+          <div id="signOutputSequence" class="sign-image-grid sign-output-sequence"></div>
+          <label for="outputText">Interpreted text</label>
+          <textarea id="outputText" rows="4" readonly></textarea>
+          <div class="row top-gap">
+            <button id="speakOutputBtn" type="button">SPEAK INTERPRETED TEXT</button>
+            <button id="copyOutputBtn" type="button">COPY OUTPUT</button>
+            <button id="clearOutputBtn" type="button">CLEAR OUTPUT</button>
+          </div>
+          <p class="hint">Shortcuts: <kbd>S</kbd> start/stop, <kbd>C</kbd> clear output, <kbd>D</kbd> debug</p>
+        </section>
+
+        <section class="panel debug" id="debugPanel" hidden>
+          <h2>DEBUG</h2>
+          <pre id="debugText">No data yet.</pre>
+        </section>
+        <section class="panel legal-notice">
+          <h2>LEGAL NOTICE</h2>
+          <p class="hint">
+            Use only with informed consent for camera/video capture. This tool is assistive and may be inaccurate; do not use
+            it as a sole source for medical, legal, safety-critical, or emergency decisions.
+          </p>
+        </section>
+        </section>
+      </section>
+    </main>
+    <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
